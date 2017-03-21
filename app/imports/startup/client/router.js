@@ -22,6 +22,20 @@ FlowRouter.route('/search', {
   },
 });
 
+FlowRouter.route('/manage', {
+  name: 'Manage_Clubs',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'Manage_Clubs' });
+  },
+});
+
+FlowRouter.route('/create', {
+  name: 'Create_Club',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'Create_Club' });
+  },
+});
+
 FlowRouter.route('/list', {
   name: 'List_Stuff_Page',
   action() {

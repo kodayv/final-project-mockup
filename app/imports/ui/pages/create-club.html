@@ -1,8 +1,8 @@
-<template name="Search_Clubs">
+<template name="Create_Club">
   {{#if Template.subscriptionsReady}}
   <div style="margin-top: 20px" class="ui container">
     <form class="ui form clubs-data-form {{ errorClass }}">
-      <h4 class="ui dividing header">Search Clubs</h4>
+      <h4 class="ui dividing header">Create Club</h4>
       <div class="field">
         <div class="two fields">
           <div class="field">
@@ -19,8 +19,16 @@
       <div class="field">
         <input type="text" name="days" placeholder="Days">
       </div>
+      <div class="field">
+        <input type="text" name="description" placeholder="Description of Club">
+      </div>
+      <div class="field">
+        <input type="text" name="days" placeholder="Associated media accounts (facebook, twitter)">
+      </div>
 
-      <button class="ui button" type="submit">Search</button>
+
+
+      <button class="ui button" type="submit">Submit for approval</button>
     </form>
   </div>
   {{/if}}

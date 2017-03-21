@@ -12,6 +12,12 @@ import './list-clubs.js';
 import './search-clubs.html';
 import './search-clubs.js';
 
+import './manage-clubs.html';
+import './manage-clubs.js';
+
+import './create-club.html';
+import './create-club.js';
+
 import './club-info-page.html';
 import './club-info-page.js';
 

@@ -1,7 +1,7 @@
 import { Template } from 'meteor/templating';
 import { ReactiveDict } from 'meteor/reactive-dict';
 import { _ } from 'meteor/underscore';
-import { Contacts, ContactsSchema } from '../../api/clubs/clubs.js';
+import { Clubs, ClubsSchema } from '../../api/clubs/clubs.js';
 import { FlowRouter } from 'meteor/kadira:flow-router';
 
 

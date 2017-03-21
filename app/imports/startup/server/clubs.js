@@ -33,7 +33,7 @@ const clubsSeeds = [
  * Initialize the contacts collection if empty with seed data.
  */
 if (Clubs.find().count() === 0) {
-  _.each(clubsSeeds, function seedclubs(clubs) {
+  _.each(clubsSeeds, function seedclubss(clubs) {
     Clubs.insert(clubs);
   });
 }

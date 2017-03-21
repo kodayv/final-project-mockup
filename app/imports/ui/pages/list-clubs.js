@@ -6,7 +6,7 @@ Template.List_Clubs.helpers({
   /**
    * @returns {*} All of the clubs documents.
    */
-  clubsList() {
+  clubList() {
     return Clubs.find();
   },
 });

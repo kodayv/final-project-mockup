@@ -10,27 +10,28 @@ export const Clubs = new Mongo.Collection('Clubs');
  */
 export const ClubsSchema = new SimpleSchema({
   name: {
-    label: 'Name',
+    label: 'name',
     type: String,
     optional: false,
     max: 200,
   },
   keywords: {
-    label: 'Keywords',
+    label: 'keywords',
     type: String,
     optional: false,
     max: 20,
   },
   days: {
-    label: 'Days',
+    label: 'days',
     type: String,
     optional: false,
     max: 20,
   },
   registered: {
-    label: 'Registered',
-    type: Boolean,
+    label: 'registered',
+    type: String,
     optional: false,
+    max: 20,
   },
 });
 

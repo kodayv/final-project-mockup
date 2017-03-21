@@ -8,6 +8,20 @@ FlowRouter.route('/', {
   },
 });
 
+FlowRouter.route('/clublist', {
+  name: 'List_Clubs',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'List_Clubs' });
+  },
+});
+
+FlowRouter.route('/search', {
+  name: 'Search_Clubs',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'Search_Clubs' });
+  },
+});
+
 FlowRouter.route('/list', {
   name: 'List_Stuff_Page',
   action() {

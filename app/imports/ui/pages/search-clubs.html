@@ -1,0 +1,24 @@
+<template name="Search_Clubs">
+  {{#if Template.subscriptionsReady}}
+  <div style="margin-top: 20px" class="ui container">
+    <form class="ui form clubs-data-form {{ errorClass }}">
+      <h4 class="ui dividing header">Search Clubs</h4>
+      <div class="field">
+        <div class="two fields">
+          {{> Text_Form_Control label="Name" required=true value=(clubsDataField 'name') errorMessage=(fieldError
+          "name")}}
+          {{> Text_Form_Control label="Registered with UH" required=true value=(clubsDataField 'registered')
+          errorMessage=(fieldError "registered")}}
+        </div>
+      </div>
+      {{> Text_Form_Control label="Keywords" required=true value=(clubsDataField 'keywords') errorMessage=(fieldError
+      "keywords")}}
+
+      {{> Text_Form_Control label="Meetup Days" required=true value=(clubsDataField 'days')
+      errorMessage=(fieldError "days")}}
+
+      <button class="ui button" type="submit">Search</button>
+    </form>
+  </div>
+  {{/if}}
+</template>

@@ -1,0 +1,31 @@
+<template name="Club_Info_Page">
+  {{#If_Logged_In}}
+    <div class="ui text container">
+      {{#if Template.subscriptionsReady}}
+        <table style="margin-top: 20px" class="ui celled table">
+          <thead>
+          <tr>
+            <th>Club Name</th>
+            <th>Description</th>
+            <th>Meeting times</th>
+            <th>Registered with UH</th>
+            <th>Date Founded</th>
+          </tr>
+          </thead>
+
+          <tbody>
+          {{#each stuff in stuffList}}
+            <tr>
+              <td>{{stuff.name}}</td>
+              <td>{{stuff.quantity}}</td>
+              <td><a href="{{pathFor 'Edit_Stuff_Page' _id=stuff._id}}">Edit</a></td>
+            </tr>
+          {{/each}}
+          </tbody>
+        </table>
+      {{else}}
+        {{> Loading}}
+      {{/if}}
+    </div>
+  {{/If_Logged_In}}
+</template>

@@ -6,5 +6,15 @@ import './edit-stuff-page.js';
 
 import './home-page.html';
 
+import './list-clubs.html';
+import './list-clubs.js';
+
+import './search-clubs.html';
+import './search-clubs.js';
+
+import './club-info-page.html';
+import './club-info-page.js';
+
 import './list-stuff-page.html';
 import './list-stuff-page.js';
+

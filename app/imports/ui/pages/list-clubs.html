@@ -1,0 +1,31 @@
+<template name="List_Clubs">
+  <div class="ui text container">
+    {{#if Template.subscriptionsReady}}
+    <table style="margin-top: 20px" class="ui celled table">
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th>Keywords</th>
+        <th>Meetup days</th>
+        <th>Registered with UH</th>
+        <th>More info</th>
+      </tr>
+      </thead>
+
+      <tbody>
+      {{#each club in clubList}}
+      <tr>
+        <td>{{club.name}}</td>
+        <td>{{club.keywords}}</td>
+        <td>{{club.days}}</td>
+        <td>{{club.registered}}</td>
+        <td><a href="{{pathFor 'Club_Info_Page' _id=club._id}}">More info</a></td>
+      </tr>
+      {{/each}}
+      </tbody>
+    </table>
+    {{else}}
+    {{> Loading}}
+    {{/if}}
+  </div>
+</template>

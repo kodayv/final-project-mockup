@@ -5,8 +5,6 @@
 
 ![image](https://cloud.githubusercontent.com/assets/17040099/24160027/ebbc4ff8-0e04-11e7-98dd-884d17cb9084.png)
 
-![image](https://cloud.githubusercontent.com/assets/17040099/24159998/cf795e62-0e04-11e7-9bcb-252236eb02e0.png)
-
 ![image](https://cloud.githubusercontent.com/assets/17040099/24160296/7d6c312a-0e05-11e7-9659-3435d0d5f9f1.png)
 
 ![image](https://cloud.githubusercontent.com/assets/17040099/24160904/10c5dc54-0e07-11e7-9fa8-411bc6691fac.png)
